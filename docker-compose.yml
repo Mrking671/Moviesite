@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - TELEGRAM_API_ID
+      - TELEGRAM_API_HASH
+      - TELEGRAM_BOT_TOKEN
+      - TELEGRAM_CHANNEL_ID
+      - OMDB_API_KEY
